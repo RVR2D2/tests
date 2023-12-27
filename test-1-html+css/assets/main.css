@@ -1,0 +1,116 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* heading */
+
+.heading {
+    margin-top: 116px;
+}
+
+.heading__title {
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 3px;
+}
+
+.heading__descr {
+    color: #404040;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.198px;
+}
+
+/* .map */
+
+.map {
+    margin-top: 56px;
+    max-width: 100%;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+/* card */
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: -230px auto 0;
+}
+
+.big-card,
+.small-card {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(44, 59, 64, 0.15);
+    padding: 20px;
+    text-align: left;
+    height: 200px;
+}
+
+.big-card {
+    width: calc(45% - 10px);
+}
+
+.small-card {
+    width: calc(29.5% - 20px);
+}
+
+.title {
+    margin: 0;
+}
+
+.icon {
+    float: right;
+    font-size: 24px;
+}
+
+.phone,
+.email {
+    margin: 5px 0;
+}
+
+.description {
+    color: #555;
+}
+
+/* Media Query for Tablets and Phones */
+@media (max-width: 768px) {
+    .big-card,
+    .small-card {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+        margin: auto 0;
+    }
+}
